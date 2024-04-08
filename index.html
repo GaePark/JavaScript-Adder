@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Adder</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="adder">
+        <header id="input-box"></header>
+        <div class="btn-box">
+          <table>
+            <tr>
+              <td class="item claculate" onclick="onCLickPercent()">%</td>
+              <td class="item claculate" onclick="onClickCE()">CE</td>
+              <td class="item claculate" onclick="onClickC()">C</td>
+              <td class="item claculate" onclick="onClickBS()"><</td>
+            </tr>
+            <tr>
+              <td class="item" onclick="onClickNum(7)">7</td>
+              <td class="item" onclick="onClickNum(8)">8</td>
+              <td class="item" onclick="onClickNum(9)">9</td>
+              <td class="item claculate" onclick="onClickCalculate(`/`)">/</td>
+            </tr>
+            <tr>
+              <td class="item" onclick="onClickNum(4)">4</td>
+              <td class="item" onclick="onClickNum(5)">5</td>
+              <td class="item" onclick="onClickNum(6)">6</td>
+              <td class="item claculate" onclick="onClickCalculate(`*`)">*</td>
+            </tr>
+            <tr>
+              <td class="item" onclick="onClickNum(1)">1</td>
+              <td class="item" onclick="onClickNum(2)">2</td>
+              <td class="item" onclick="onClickNum(3)">3</td>
+              <td class="item claculate" onclick="onClickCalculate(`-`)">-</td>
+            </tr>
+            <tr>
+              <td class="item"></td>
+              <td class="item" onclick="onClickNum(0)">0</td>
+              <td class="item" onclick="onClickNum(`.`)">.</td>
+              <td class="item claculate" onclick="onClickCalculate(`+`)">+</td>
+            </tr>
+            <tr>
+              <td colspan="4" class="result" onclick="onClickResult()">=</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
